@@ -1,0 +1,64 @@
+{
+	"Spike Removal": {
+		"Whitaker-Hayes": {
+			"threshold": 7.0,
+			"window": 5
+		}
+	},
+	"Calibration": {
+		"Manual": {
+			"slope": 1.0,
+			"intercept": 0.0
+		},
+		"Reference": {
+			"prominence": 0.05,
+			"distance": 5,
+			"tolerance": 5.0
+		}
+	},
+	"Smoothing": {
+		"Savitzky-Golay": {
+			"window_length": 11,
+			"polyorder": 3
+		},
+		"Moving Average": {
+			"window": 5
+		},
+		"Gaussian": {
+			"sigma": 2.0
+		}
+	},
+	"Normalization": {
+		"high_start": 0.0,
+		"high_end": 0.0,
+		"low_start": 0.0,
+		"low_end": 0.0,
+		"peak_start": 0.0,
+		"peak_end": 0.0,
+		"tolerance": 0.5,
+		"0 to 1": {"tolerance": 0.5, "min_shift": 0.0, "max_shift": 0.0, "peak_shift": 0.0},
+		"Normalize to Highest": {"tolerance": 0.5, "min_shift": 0.0, "max_shift": 0.0, "peak_shift": 0.0},
+		"Normalize to Peak": {"tolerance": 0.5, "min_shift": 0.0, "max_shift": 0.0, "peak_shift": 0.0}
+	},
+	"Baseline": {
+		"Automatic": {"algorithm": "ALS", "lam": 100000.0, "p": 0.01, "niter": 10},
+		"Constant": {"mode": "Mean", "value": 0.0},
+		"Custom": {"points": 10, "connection": "Linear"}
+	},
+	"Peak Fitting": {
+		"Detection": {"prominence": 0.05, "distance": 5, "max_peaks": 5}
+	},
+	"Data-Tab": {
+		"ViewMode": "overlay",
+		"YOffset": 0.0,
+		"XOffset": 0.0,
+		"YOffsetAuto": true
+		
+	},
+	"Import-Settings": {
+		"Delimiter": "Comma",
+		"CustomDelimiter": "",
+		"UseSourceFolder": true,
+		"ProcessingPath": ""
+	}
+}

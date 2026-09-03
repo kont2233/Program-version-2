@@ -1,0 +1,14 @@
+{
+    "Gaussian": {
+        "equation": "A * exp(-0.5 * ((x - center) / width)^2)",
+        "parameters": ["height", "center", "width"]
+    },
+    "Lorentzian": {
+        "equation": "A / (1 + ((x - center) / width)^2)",
+        "parameters": ["height", "center", "width"]
+    },
+    "Voigt": {
+        "equation": "A * voigt_profile(x - center, width, width)",
+        "parameters": ["height", "center", "width"]
+    }
+}

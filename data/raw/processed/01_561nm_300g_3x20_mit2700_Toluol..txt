@@ -1,0 +1,4 @@
+raw - raw,raw - raw,Truncation - Truncation,Truncation - Truncation
+Raman Shift,Intensity,Truncated,Truncated
+Raw Data x cm-1,Raw Data y a. u.,Raman shift cm-1,Intensity a. u.
+param: nan,param: nan,param: nan,param: nan

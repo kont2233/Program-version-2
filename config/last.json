@@ -1,0 +1,112 @@
+{
+    "Baseline": {
+        "Automatic": {
+            "algorithm": "ALS",
+            "degree": 2,
+            "lam": 100000.0,
+            "niter": 10,
+            "p": 0.01
+        },
+        "Constant": {
+            "mode": "Min",
+            "value": 20.0
+        },
+        "Custom": {
+            "connection": "Linear",
+            "points": 10
+        }
+    },
+    "Calibration": {
+        "Manual": {
+            "intercept": -200.694,
+            "slope": 1.1156
+        },
+        "Reference": {
+            "distance": 5.0,
+            "prominence": 0.05,
+            "tolerance": 100.0
+        }
+    },
+    "Data-Tab": {
+        "StackNormalize": false,
+        "ViewMode": "stacked",
+        "YOffset": 10204.09,
+        "YOffsetAuto": false
+    },
+    "Despiked": {
+        "whitaker_hayes_despike": {
+            "threshold": 7.0,
+            "window": 5
+        }
+    },
+    "Moving Average": {
+        "moving_average": {
+            "window": 5
+        }
+    },
+    "Normalization": {
+        "0 to 1": {
+            "method": "zero_one"
+        },
+        "Normalize to Highest": {
+            "low_max_shift": null,
+            "low_min_shift": null,
+            "max_shift": 1020.9089765387264,
+            "method": "highest",
+            "min_shift": 1020.9089765387264
+        }
+    },
+    "Smoothing": {
+        "Gaussian": {
+            "sigma": 2.0
+        },
+        "Moving Average": {
+            "window": 5
+        },
+        "Savitzky-Golay": {
+            "polyorder": 3,
+            "window_length": 11
+        }
+    },
+    "Spectra-Canvas": {
+        "prev_settings": {
+            "alpha": 0.0,
+            "color": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "enabled": false,
+            "linestyle": "-",
+            "linewidth": 2,
+            "zorder": "above"
+        }
+    },
+    "Spike Removal": {
+        "Median Filter": {
+            "threshold": 3.0,
+            "window": 5
+        },
+        "Modified Z-score": {
+            "window": 5,
+            "z_thresh": 5.0
+        },
+        "Whitaker-Hayes": {
+            "threshold": 7.0,
+            "window": 5
+        }
+    },
+    "Truncation": {
+        "truncate": {
+            "max_shift": 1600.0,
+            "min_shift": 500.0
+        }
+    },
+    "Whitaker-Hayes": {
+        "whitaker_hayes_despike": {
+            "threshold": 7.0,
+            "window": 5
+        }
+    }
+}
